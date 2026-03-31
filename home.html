@@ -3,56 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Computer Science Portfolio</title>
+    <title>The Tarnished Dev | CS Portfolio</title>
     <link rel="stylesheet" href="webstyle.css">
 </head>
 <body>
 
     <header>
         <img src="campus.jpg" alt="University of Guelph Campus" class="header-graphic">
-        <h1>Welcome to My Digital Portfolio</h1>
-        <p>Software Engineering | Algorithm Design | Machine Learning</p>
+        <h1>Welcome to the Lands Between</h1>
+        <p class="header-subtitle">> INIT_USER: FIRST_YEAR_CS_STUDENT</p>
+        <div class="grace-divider">
+            <span class="grace-star">✦</span>
+        </div>
     </header>
 
-    <nav aria-label="Main Navigation">
+    <nav>
         <ul>
-            <li><a href="home.html" class="active">Introduction</a></li>
-            <li><a href="projects.html">Development & Projects</a></li>
-            <li><a href="two.html">Academics & Theory</a></li>
+            <li><a href="home.html" class="active">The Tarnished Dev</a></li>
+            <li><a href="one.html">Artifacts (Projects)</a></li>
+            <li><a href="two.html">Arcane Theory (Skills)</a></li>
         </ul>
     </nav>
 
     <main>
         <article>
-            <h2>Professional Summary</h2>
-            <p>Welcome to my professional academic portfolio. I am a dedicated and highly motivated first-year Computer Science student currently completing my studies at the University of Guelph. My academic and professional journey is driven by a profound fascination with how complex, real-world problems can be systematically broken down and solved through elegant code, optimized algorithms, and robust mathematical foundations. As I progress through my early university career, I am actively seeking summer research positions within the computer science department where I can apply my theoretical knowledge to practical, cutting-edge technical challenges.</p>
+            <h2>A Tarnished in the Realm of Code</h2>
+            <p class="section-intro">
+                I'm a first-year Computer Science student at the University of Guelph. While a lot of people try to avoid the low-level stuff, I genuinely enjoy figuring out how things work under the hood.
+            </p>
             
-            <p>Computer science is much more than a degree path for me; it is a discipline that perfectly bridges strict logical reasoning, creative problem-solving, and mathematical rigor. During my time at the university, I have immersed myself deeply in the foundational concepts of software engineering, low-level hardware architecture, and complex data structures. I firmly believe that a strong, unshakeable grasp of the fundamentals is absolutely required to innovate in rapidly evolving fields like artificial intelligence and neural networks. This is precisely why I dedicate significant time outside of my standard coursework to understanding low-level memory management as well as high-level machine learning abstractions.</p>
+            <p>For me, computer science is the perfect mix of strict logic and creative problem-solving. Lately, I've been spending most of my time diving into foundational software engineering, low-level memory management in C, and figuring out the math that actually makes machine learning work. I firmly believe that to build cool stuff in AI or game dev, you have to understand the bare-metal operations first. You can't cast high-level spells if you don't understand the basic mana mechanics.</p>
             
-            <blockquote>
-                "The most effective software engineers are those who understand the full stack of computer science—from the mathematical theory that dictates algorithm efficiency to the bare-metal operations of pointers and memory allocation."
-            </blockquote>
+            <p>Currently, I'm looking for a summer research position within the CS department where I can take this theoretical knowledge and apply it to some real-world problems.</p>
         </article>
 
         <article>
-            <h2>Beyond the Screen</h2>
-            <figure>
-                <img src="setup.jpg" alt="A clean desk with a monitors and a mechanical keyboard" class="card-img" style="max-width: 600px; display: block; margin: 0 auto;">
-                <figcaption>My primary development environment, optimized for deep-focus coding sessions.</figcaption>
+            <h2>Forging Artifacts</h2>
+            
+            <p>Beyond standard coursework, I like to build things that push my current skill limits. I recently finished my first major side project with some friends: a handwriting recognition neural network built using PyTorch. Figuring out backpropagation and tweaking the hyperparameters was tough, but getting it to actually read human script was incredibly rewarding.</p>
+            
+            <p>I also do some freelance web development, like recently building a custom site for a startup called btyeSized Media, and I'm actively involved in the Game Dev club on campus. I'm even sketching out plans for a desktop AI assistant that acts like a digital familiar (modeled after Miku). I like keeping my hands in different parts of the tech stack.</p>
+        </article>
+
+        <article>
+            <h2>Resting at the Site of Grace</h2>
+            <figure style="margin: 2.5rem 0; text-align: center;">
+                <img src="setup.jpg" alt="A clean desk with monitors and a mechanical keyboard" class="card-img" style="max-width: 600px; display: block; margin: 0 auto; border: 1px solid #333;">
+                <figcaption style="font-family: 'Share Tech Mono', monospace; font-size: 0.8rem; color: #a39b8b; margin-top: 10px;">> My primary development environment / Site of Grace.</figcaption>
             </figure>
             
-            <p>While my academic and professional life is deeply rooted in code and mathematics, I believe that a well-rounded developer draws inspiration from a variety of creative outlets. Collaboration and creative problem-solving are skills that extend far beyond a text editor. For instance, I am an avid player of Dungeons & Dragons, where I currently play a Drow Sorcerer. Designing character campaigns and managing the complex rulesets of tabletop roleplaying games surprisingly mirrors the logic and system-design required in object-oriented programming. It requires keeping track of variables, understanding state changes, and collaborating closely with a team to achieve a common goal.</p>
+            <p>Staring at a terminal screen all day is a fast track to burnout, so I make sure to rest at a Site of Grace to restore my creative vigor. I'm a massive Dungeons & Dragons fan—I'm currently playing a Drow Sorcerer who studies shadow magic. Honestly, running a D&D campaign requires almost as much state-management and system design as object-oriented programming.</p>
             
-            <p>Furthermore, I find that my best programming work is done while listening to Japanese City Pop music. The complex instrumental layering and upbeat tempos provide the perfect backdrop for long, focused sessions of debugging and algorithmic design. Balancing strict academic rigor with creative, collaborative hobbies allows me to approach computer science problems with a fresh, dynamic perspective.</p>
+            <p>I also find that my best coding sessions happen when I have Japanese City Pop blasting through my headphones. It’s the perfect upbeat soundtrack for late-night debugging when my C pointers aren't doing what they're supposed to.</p>
             
-            <p>Please use the navigation menu at the top of the page to explore my specific software development projects on the "Development & Projects" page, or delve into my technical coursework and mathematical background on the "Academics & Theory" page.</p>
+            <p>Feel free to check out my specific builds on the <a href="projects.html" style="color: var(--miku-cyan); text-decoration: none;">Artifacts</a> page, or look at my math and low-level C work on the <a href="two.html" style="color: var(--miku-cyan); text-decoration: none;">Arcane Theory</a> page.</p>
         </article>
     </main>
 
     <footer>
-        <p>Thank you for visiting my portfolio.</p>
-        <p>Contact me at: <a href="ridhwanmuntasir@gmail.com">ridhwanmuntasir@gmail.com</a></p>
-        <p>&copy; 2026 CS Academic Portfolio | Hand-coded for Assignment Requirements</p>
+        <p>> STATUS: System Online &nbsp;|&nbsp; Vigor: 99 &nbsp;|&nbsp; Mind: 99</p>
+        <p>> CONTACT: <a href="ridhwanmuntasir@gmail.com">ridhwanmuntasir@gmail.com</a></p>
+        <p>&copy; 2026 — Crafted in the Lands Between | Hand-coded for Assignment Requirements</p>
     </footer>
 
 </body>

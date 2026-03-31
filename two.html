@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics & Theory | Tech Portfolio</title>
+    <link rel="stylesheet" href="webstyle.css">
+    <style>
+        :root {
+            --text-muted: #a39b8b;
+            --grace-gold-dim: rgba(212, 175, 55, 0.4);
+        }
+        /* ── Page-specific overrides ────────────────── */
+
+        /* Bigger cards with min-height */
+        .card {
+            padding: 2.5rem;
+            min-height: 280px;
+        }
+
+        /* Header image fallback — page renders fine without the file */
+        .header-graphic {
+            background: linear-gradient(135deg, #12121a 0%, #1a1a28 50%, #0f0f14 100%);
+            min-height: 240px;
+        }
+
+        /* Inline figure */
+        .content-figure {
+            margin: 2.5rem 0;
+            text-align: center;
+        }
+
+        .content-figure .card-img {
+            max-width: 800px;
+            width: 100%;
+            height: 260px;
+            display: block;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #12121a, #1a1a28);
+        }
+
+        figcaption {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            letter-spacing: 1px;
+            margin-top: 0.75rem;
+            padding: 0.5rem 1rem;
+            border-left: 2px solid var(--grace-gold-dim);
+            display: inline-block;
+            text-align: left;
+        }
+
+        /* Article spacing */
+        main article + article {
+            margin-top: 1rem;
+        }
+
+        /* Math section intro */
+        .math-intro {
+            max-width: 760px;
+            font-style: italic;
+            color: var(--text-muted);
+            margin-bottom: 2.5rem;
+            font-size: 1rem;
+            line-height: 1.85;
+            border-left: 2px solid var(--grace-gold-dim);
+            padding-left: 1.2rem;
+        }
+
+        /* Prose paragraphs */
+        .prose p + p {
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="math-header.jpg"
+             alt="Complex mathematical equations on a blackboard"
+             class="header-graphic"
+             loading="lazy"
+             width="800" height="300">
+        <h1>Academics &amp; Theoretical Skills</h1>
+        <p class="header-subtitle">> C_PROGRAMMING / MATHEMATICS / SYSTEMS_THEORY</p>
+        <div class="grace-divider">
+            <span class="grace-star">✦</span>
+        </div>
+    </header>
+
+    <nav aria-label="Main Navigation">
+        <ul>
+            <li><a href="home.html">The Tarnished Dev</a></li>
+            <li><a href="projects.html">Artifacts (Projects)</a></li>
+            <li><a href="two.html" class="active">Arcane Theory (Skills)</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <article>
+            <h2>Low-Level Systems: C Programming</h2>
+
+            <figure class="content-figure">
+                <img src="c-code-snippet.jpg"
+                     alt="A C program utilizing pointers and structs"
+                     class="card-img"
+                     loading="lazy"
+                     width="800" height="260">
+                <figcaption>Implementing a custom doubly linked list using manual memory allocation in C.</figcaption>
+            </figure>
+
+            <div class="prose">
+                <p>A core, foundational pillar of my technical skill set is my deep proficiency and intense interest in C programming. I have dedicated significant time to mastering the intricacies of manual memory management—a crucial requirement for writing highly optimized, high-performance software. I am highly comfortable working with memory addresses, passing data by reference, and strictly utilizing dynamic memory allocation functions.</p>
+
+                <p>I frequently use <code>malloc</code>, <code>calloc</code>, and <code>free</code> to handle memory allocation safely, ensuring programs are efficient and completely free of memory leaks. I also have extensive experience building and utilizing custom Makefiles to automate compilation for large, complex, multi-file projects.</p>
+
+                <p>My university coursework and personal studies have heavily focused on the theoretical backing of algorithms and implementing fundamental data structures entirely from scratch—robust, error-checked implementations of complex structs, singly and doubly linked lists, stacks, and dynamic queues. This practice has given me a structural understanding of exactly how data is stored, moved, and manipulated at the bare-metal memory level.</p>
+            </div>
+        </article>
+
+        <article>
+            <h2>Advanced Mathematics &amp; Statistical Analysis</h2>
+
+            <p class="math-intro">
+                A rigorous mathematical foundation is the primary differentiator that separates a standard programmer from a true computer scientist. My academic focus spans several critical areas of mathematics that directly inform my programming and machine learning goals.
+            </p>
+
+            <div class="grid-container">
+
+                <div class="card">
+                    <span class="card-tag">Calculus</span>
+                    <h3>Advanced Calculus</h3>
+                    <p>Calculus is the language of continuous change—vital for optimizing machine learning algorithms. I have developed a strong grasp of advanced calculus principles: evaluating complex integrals, calculating multi-variable derivatives, and rigorously analyzing mathematical limits.</p>
+                    <p style="margin-top: 0.75rem;">I am comfortable applying theorems such as L'Hôpital's Rule to solve indeterminate forms, utilizing trigonometric substitution, and working with hyperbolic functions to solve continuous, non-linear problems.</p>
+                    <div class="card-status">
+                        <span class="status-dot active"></span>
+                        ACTIVE STUDY
+                    </div>
+                </div>
+
+                <div class="card">
+                    <span class="card-tag">Discrete Math</span>
+                    <h3>Combinatorics &amp; Graph Theory</h3>
+                    <p>Understanding discrete structures is essential for modern algorithm design and network architecture. I have studied permutations, combinations, and the binomial theorem extensively.</p>
+                    <p style="margin-top: 0.75rem;">I am deeply fascinated by graph theory—the mathematical analysis of subgraphs, pathfinding algorithms, and complex network topologies—which directly translates to mapping out data structures in code.</p>
+                    <div class="card-status">
+                        <span class="status-dot active"></span>
+                        ACTIVE STUDY
+                    </div>
+                </div>
+
+                <div class="card">
+                    <span class="card-tag">Statistics</span>
+                    <h3>Linear Regression &amp; Statistics</h3>
+                    <p>To support my interest in AI and machine learning, I have studied statistical modeling and data analysis extensively. I am proficient in calculating and interpreting simple and multiple linear regression analysis.</p>
+                    <p style="margin-top: 0.75rem;">I understand how to evaluate model fitting, calculate error margins, and interpret ANOVA tables to determine the statistical significance and reliability of predictive data models.</p>
+                    <div class="card-status">
+                        <span class="status-dot active"></span>
+                        ACTIVE STUDY
+                    </div>
+                </div>
+
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>> STATUS: System Online &nbsp;|&nbsp; Vigor: 99 &nbsp;|&nbsp; Mind: 99</p>
+        <p>> CONTACT: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>&copy; 2026 — Crafted in the Lands Between</p>
+    </footer>
+
+</body>
+</html>

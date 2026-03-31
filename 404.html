@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 | YOU DIED</title>
+    <link rel="stylesheet" href="webstyle.css">
+    <style>
+        /* ── CSS-only rune rain ─────────────────────── */
+        .rune-field {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .rune {
+            position: absolute;
+            bottom: -3rem;
+            color: #8a0303;
+            font-family: serif;
+            font-size: 1.2rem;
+            opacity: 0;
+            animation: rune-rise linear infinite;
+        }
+
+        @keyframes rune-rise {
+            0%   { transform: translateY(0);       opacity: 0;   }
+            10%  { opacity: 0.35; }
+            80%  { opacity: 0.15; }
+            100% { transform: translateY(-110vh);  opacity: 0;   }
+        }
+
+        /* Each rune: unique position, duration, delay, size */
+        .rune:nth-child(1)  { left:  4%;  font-size: 1.0rem; animation-duration: 18s; animation-delay:  0s; }
+        .rune:nth-child(2)  { left:  9%;  font-size: 1.4rem; animation-duration: 22s; animation-delay:  3s; }
+        .rune:nth-child(3)  { left: 15%;  font-size: 0.9rem; animation-duration: 16s; animation-delay:  7s; }
+        .rune:nth-child(4)  { left: 21%;  font-size: 1.3rem; animation-duration: 25s; animation-delay:  1s; }
+        .rune:nth-child(5)  { left: 28%;  font-size: 1.1rem; animation-duration: 20s; animation-delay:  9s; }
+        .rune:nth-child(6)  { left: 34%;  font-size: 0.85rem;animation-duration: 17s; animation-delay:  5s; }
+        .rune:nth-child(7)  { left: 40%;  font-size: 1.5rem; animation-duration: 24s; animation-delay: 12s; }
+        .rune:nth-child(8)  { left: 47%;  font-size: 1.0rem; animation-duration: 19s; animation-delay:  2s; }
+        .rune:nth-child(9)  { left: 53%;  font-size: 1.2rem; animation-duration: 21s; animation-delay:  8s; }
+        .rune:nth-child(10) { left: 59%;  font-size: 0.95rem;animation-duration: 23s; animation-delay:  4s; }
+        .rune:nth-child(11) { left: 65%;  font-size: 1.4rem; animation-duration: 18s; animation-delay: 11s; }
+        .rune:nth-child(12) { left: 71%;  font-size: 1.1rem; animation-duration: 26s; animation-delay:  6s; }
+        .rune:nth-child(13) { left: 77%;  font-size: 0.9rem; animation-duration: 15s; animation-delay: 14s; }
+        .rune:nth-child(14) { left: 83%;  font-size: 1.3rem; animation-duration: 22s; animation-delay:  0s; }
+        .rune:nth-child(15) { left: 89%;  font-size: 1.0rem; animation-duration: 19s; animation-delay: 10s; }
+        .rune:nth-child(16) { left: 94%;  font-size: 1.2rem; animation-duration: 24s; animation-delay:  3s; }
+        .rune:nth-child(17) { left: 12%;  font-size: 1.6rem; animation-duration: 28s; animation-delay: 16s; }
+        .rune:nth-child(18) { left: 57%;  font-size: 0.8rem; animation-duration: 20s; animation-delay: 13s; }
+        .rune:nth-child(19) { left: 36%;  font-size: 1.1rem; animation-duration: 17s; animation-delay: 18s; }
+        .rune:nth-child(20) { left: 75%;  font-size: 1.3rem; animation-duration: 23s; animation-delay:  7s; }
+    </style>
+</head>
+<body>
+
+    <main class="death-screen">
+
+        <!-- Pure CSS rune rain -->
+        <div class="rune-field" aria-hidden="true">
+            <span class="rune">ᚠ</span>
+            <span class="rune">ᚢ</span>
+            <span class="rune">ᚦ</span>
+            <span class="rune">ᚨ</span>
+            <span class="rune">ᚱ</span>
+            <span class="rune">ᚲ</span>
+            <span class="rune">ᚷ</span>
+            <span class="rune">ᚹ</span>
+            <span class="rune">ᚺ</span>
+            <span class="rune">ᚾ</span>
+            <span class="rune">ᛁ</span>
+            <span class="rune">ᛃ</span>
+            <span class="rune">ᛇ</span>
+            <span class="rune">ᛈ</span>
+            <span class="rune">ᛉ</span>
+            <span class="rune">ᛊ</span>
+            <span class="rune">ᛏ</span>
+            <span class="rune">ᛒ</span>
+            <span class="rune">ᛖ</span>
+            <span class="rune">ᛗ</span>
+        </div>
+
+        <div class="death-content">
+
+            <p class="death-code">— ERROR 404 —</p>
+
+            <h1 class="death-text">YOU DIED</h1>
+
+            <p class="death-message">
+                Tarnished, you have strayed too far from the guidance of Grace.<br>
+                The server directory you seek has fallen to the rot of a broken<br>
+                link—or a fatal segmentation fault.
+            </p>
+
+            <a href="home.html" class="resurrect-btn">✦ &nbsp; Touch Grace &nbsp; ✦</a>
+
+            <div class="death-log">
+                <p>> SYSTEM LOG: If this shattered link is the fault of the developer, send a raven.</p>
+                <p>> COMMUNICATE: <a href="ridhwanmuntasir@gmail.com">ridhwanmuntasir@gmail.com</a></p>
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
